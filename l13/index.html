@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        document.write('<h1>This header created by write method </h1>');
+        document.write('<div id = "div1">This div created by write method </div>');
+        document.write('<button id = "btn1">Change text div</button>');
+        document.write('<button id = "btn2">Change text selection</button>');
+
+        const btn1 = document.getElementById('btn1');
+        const btn2 = document.getElementById('btn2');
+        
+        btn1.onclick = () => document.getElementById('div1').innerHTML = `<section id = "sect">${prompt('Input text')}</section>`;
+        btn2.onclick = () => document.getElementById('sect') ? document.getElementById('sect').innerText = `${prompt('Input text')}` : alert('tag does not exist');
+
+    </script>
+</body>
+</html>

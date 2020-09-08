@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    }
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    /* стиль заголовка страницы */
+    .header {
+    grid-area: header;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    }
+    .a1{
+        grid-area: a1;
+        background-color: rgb(107, 106, 106);
+        /* height: 50px; */
+    }
+    .a2{
+        grid-area: a2;
+        background-color: rgb(170, 168, 168);
+    }   
+    .a3{
+        grid-area: a3;
+        background-color: rgb(59, 39, 39);
+    }    
+    /* стиль grid-контейнера */
+    .grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'left middle a1 a1 a1 a1'
+    'left middle a2 a2 a2 a3'
+    'left middle a2 a2 a2 a3'
+    'left middle a2 a2 a2 a3'
+    'left middle a2 a2 a2 a3'
+    'footer footer footer footer footer footer';
+    /* grid-column-gap: 10px; - если нужен промежуток между колонками */
+    }
+    /* стиль для всех колонок */
+    .left,
+    .middle,
+    .right {
+    padding: 10px;
+    height: 500px; /* при заполнении контентом удалить */
+    }
+    /* дополнительный стиль для левой колонки */
+    .left {
+    grid-area: left;
+    }
+    /* дополнительный стиль для средней колонки */
+    .middle {
+    grid-area: middle;
+    }
+    /* дополнительный стиль для правой колонки */
+    .right {
+    grid-area: right;
+    }
+    /* стиль для «подвала» страницы */
+    .footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    }
+    /* медиа-запрос назначает стиль при ширине экрана ≤ 600px */
+    @media (max-width: 600px) {
+    .grid-container {
+    grid-template-areas:
+    'header header header header header header'
+    'left left left left left left'
+    'middle middle middle middle middle middle'
+    'right right right right right right'
+    'footer footer footer footer footer footer';
+    }
+    }

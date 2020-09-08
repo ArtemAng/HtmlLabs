@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* стиль заголовка страницы */
+        .header {
+            grid-area: header;
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .a1 {
+            grid-area: a1;
+            background-color: rgb(107, 106, 106);
+            /* height: 50px; */
+        }
+
+        .a2 {
+            grid-area: a2;
+            background-color: rgb(170, 168, 168);
+        }
+
+        .a3 {
+            grid-area: a3;
+            background-color: rgb(59, 39, 39);
+        }
+        .a4 {
+            grid-area: a4;
+            background-color: rgb(170, 168, 168);
+        }
+
+        .a5 {
+            grid-area: a5;
+            background-color: rgb(255, 140, 140);
+        }
+        .a6{
+            grid-area: a6;
+            background-color: rgb(58, 165, 26);
+        }
+        .a7 {
+            grid-area: a7;
+            background-color: rgb(28, 139, 158);
+        }
+
+        /* стиль grid-контейнера */
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+            'a1 a1 a1 a2'
+            'a3 a4 a5 a5'
+            'a3 a4 a5 a5'
+            'a3 a6 a6 a7'
+            ;
+            /* grid-column-gap: 10px; - если нужен промежуток между колонками */
+        }
+
+        /* стиль для всех колонок */
+        .a1,
+        .a2,
+        .a3,
+        .a4,
+        .a5,
+        .a6,
+        .a7 {
+            padding: 10px;
+            height: 200px;
+            /* при заполнении контентом удалить */
+        }
+
+        /* дополнительный стиль для левой колонки */
+        .left {
+            grid-area: left;
+        }
+
+        /* дополнительный стиль для средней колонки */
+        .middle {
+            grid-area: middle;
+        }
+
+        /* дополнительный стиль для правой колонки */
+        .right {
+            grid-area: right;
+        }
+
+        /* стиль для «подвала» страницы */
+        .footer {
+            grid-area: footer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* медиа-запрос назначает стиль при ширине экрана ≤ 600px */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-areas:
+                    'header header header header header header'
+                    'left left left left left left'
+                    'middle middle middle middle middle middle'
+                    'right right right right right right'
+                    'footer footer footer footer footer footer';
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <!-- Grid элементы -->
+        
+        <!-- <div class="right" style="background-color:#ccc;"> Колонка 3</div> -->
+        <div class="a1">Колонка A1</div>
+        <div class="a2"> Колонка a2</div>
+        <div class="a3"> Колонка a2</div>
+        <div class="a4"> Колонка a2</div>
+        <div class="a5"> Колонка a2</div>
+        <div class="a6"> Колонка a2</div>
+        <div class="a7"> Колонка a2</div>
+    </div><!-- Grid контейнер -->
+</body>
+
+</html>

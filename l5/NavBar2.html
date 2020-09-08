@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        ul>li {
+            flex: 1 0 auto;
+        }
+
+        ul>li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font: bold 16px Verdana;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        li a.active {
+            color: white;
+            background-color: #4CAF50;
+        }
+
+        @media only screen and (max-width:440px) {
+            ul {
+                flex-direction: column;
+                width: 150px;
+            }
+
+            ul>li a {
+                text-align: left;
+            }
+        }
+
+        .menu {
+            display: flex;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .links {
+            width: 100px;
+            text-align: center;
+            list-style: none;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .links:hover {
+            background-color: #fff;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+
+        .google {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <a href="index.html">
+            <li class="links">Home</li>
+        </a>
+        <a href="Lists.html">
+            <li class="links">Lists</li>
+        </a>
+        <a href="Table1.html">
+            <li class="links">Table2</li>
+        </a>
+        <a href="Table2.html">
+            <li class="links">Table2</li>
+        </a>
+        <a href="NavBar1.html">
+            <li class="links">NavBar1</li>
+        </a>
+        <a href="NavBar2.html">
+            <li class="links">NavBar2</li>
+        </a>
+        <a href="NavBar3.html">
+            <li class="links">NavBar3</li>
+        </a>
+        <a href="NavBar4.html">
+            <li class="links">NavBar4</li>
+        </a>
+        <a href="NavBar5.html">
+            <li class="links">NavBar5</li>
+        </a>
+    </ul>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+
+</html>

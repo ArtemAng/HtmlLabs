@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id = "ul"></ul>
+    <button id ="add">add</button>
+    <button id ="del">del</button>
+    <script>
+        const list = document.getElementById('ul');
+        const add = document.getElementById('add');
+        const del = document.getElementById('del');
+        let arr = ['das', 'asd', 'sad'];
+        arr.forEach((i)=>{
+            let li = document.createElement('li');
+            li.innerText = i;
+            list.appendChild(li)            
+        })
+        add.addEventListener('click', ()=>{
+            let li = document.createElement('li');
+            li.innerText = prompt('Insert text');
+            list.appendChild(li)  
+        })
+        del.addEventListener('click', ()=>{
+           
+            const items = document.querySelectorAll('li');
+            list.removeChild(items[ prompt('Insert number')])
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {margin:0;}
+nav {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(230, 230, 230);
+position: fixed;
+display: flex;
+top: 0;
+width: 100%;
+display: flex;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+
+padding: 14px 16px;
+text-decoration: none;
+font: bold 16px Verdana;
+display: block; 
+transition: 1s; 
+}
+li a:hover:not(.active) {
+background-color: #111;
+transition-property: color, background-color;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+transition-delay: 0.3s;
+transform: scale(1.4); 
+
+}
+
+.active {
+background-color: rgb(150, 216, 152);
+transition-property: color, background-color;
+transition-duration: 1s;
+transition-timing-function: ease-out;
+transition-delay: 0.2s;
+}
+.TexbB1_1{
+    color: #111;
+    width: 159px;
+    margin-top: 4%;
+    margin-left: 10px;
+}
+.TexbB1{
+    color: #111;
+    width: 159px;
+    margin-top: 4%;
+    margin-left: 10px;
+}
+.TexbB2{
+    color: #111;
+    width: 159px;
+    margin-top: 4%;
+    margin-left: 10px;
+    display: flex ;
+}
+.TexbB3{
+    color: #111;
+    width: 159px;
+    margin-top: 4%;
+    margin-left: 10px;
+    display: flex ;
+}
+.TexbB4{
+    color: #111;
+    width: 159px;
+    margin-top: 4%;
+    margin-left: 10px;
+    display: flex ;
+}
+.TexbB5{
+    color: #111;
+    width: 159px;
+    margin-top: 4%;
+    margin-left: 10px;
+    display: flex ;
+}
+.TexbB6{
+    color: #111;
+    width: 159px;
+    margin-top: 4%;
+    margin-left: 10px;
+    display: flex ;
+}
+.TexbB7{
+    color: #111;
+    width: 159px;
+    margin-top: 4%;
+    margin-left: 10px;
+    display: flex ;
+}
+.IMG1{
+    width: 100px;
+    height: 100px;
+    margin-left: 14%;
+    margin-top:-47% ;
+}
+.p1{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    transform: skew(-30deg);
+}
+.p2{
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+}
+.p2:hover{
+    transform: translate(5px, 10px);
+}
+.p3{
+    width: 100px;
+    height: 100px;
+    display: block; 
+    transition: 1s; 
+}
+.p3:hover{
+    transform: scale(1.4);
+}
+.p4{
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+
+    transform-origin: 100% 0;
+}
+.p4:hover{
+    transform: rotate(-20deg);
+}
+.p5{
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s, transform 2s;
+    
+}
+.p5:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+.p6{
+    width: 100px;
+    height: 100px;
+    transition: width 1s, height 3s, transform 2s,rigth 2s;
+}
+    .p6:hover{
+        transform: rotate(920deg);
+        
+    }
+
+   

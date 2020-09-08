@@ -1,0 +1,23 @@
+.menu{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+.links{
+    width: 100px;
+    text-align: center;
+    list-style: none;
+    background-color: #000000;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+}
+.links:hover{
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+.google{
+    color: #000000;
+}

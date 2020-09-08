@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .main-container {
+
+            display: grid;
+            grid-template-areas:
+                'fisrt second'
+        }
+
+        .grid-container-left {
+            margin-r: 5px;
+            display: grid;
+            grid-area: fisrt;
+            grid-template-areas:
+                'a1 a1 a1 a1 a2'
+                'a3 a4 a5 a5 a5'
+                'a3 a6 a6 a6 a7'
+                'a3 a6 a6 a6 a7'
+        }
+
+        .a1,
+        .a2,
+        .a3,
+        .a4,
+        .a5,
+        .a6,
+        .a7 {
+            border: 1px solid black;
+        }
+
+        .a1 {
+            height: 70px;
+            grid-area: a1;
+            background-color: #9fbb24;
+        }
+
+        .a2 {
+            height: 70px;
+            background-color: #6f8316;
+            grid-area: a2;
+        }
+
+        .a3 {
+            height: 112px;
+            background-color: #b6d13f;
+            grid-area: a3;
+        }
+
+        .a4 {
+            height: 50px;
+            background-color: #cef71b;
+            grid-area: a4;
+        }
+
+        .a5 {
+            width: auto;
+            height: 50px;
+            grid-area: a5;
+            background-color: #1bf0f7;
+
+        }
+
+        .a6 {
+            height: 60px;
+            background-color: #311bf7;
+            grid-area: a6;
+        }
+
+        .a7 {
+            height: 60px;
+            background-color: #f71bc7;
+            grid-area: a7;
+        }
+
+        .a1-r,
+        .a2-r,
+        .a3-r,
+        .a4-r,
+        .a5-r,
+        .a6-r,
+        .a7-r {
+            border: 1px solid black;
+        }
+
+        .a1-r {
+
+            background-color: #a53d3d;
+            grid-area: a1-r;
+        }
+
+        .a2-r {
+            background-color: #a5953d;
+            grid-area: a2-r;
+        }
+
+        .a3-r {
+            background-color: #3d73a5;
+            grid-area: a3-r;
+        }
+
+        .a4-r {
+            grid-area: a4-r;
+            background-color: #a53d97;
+        }
+
+        .a5-r {
+            background-color: #a53d3d;
+            grid-area: a5-r;
+        }
+
+        .a6-r {
+            background-color: #3d3fa5;
+            grid-area: a6-r;
+        }
+
+        .a7-r {
+            background-color: #1e5513;
+            grid-area: a7-r;
+        }
+
+        .grid-container-r {
+            display: grid;
+            grid-area: second;
+            grid-template-areas:
+                'a1-r a2-r a2-r a2-r '
+                'a3-r a3-r a4-r a4-r '
+                'a5-r a6-r a6-r a7-r '
+                'a5-r a6-r a6-r a7-r '
+        }
+
+        .c {
+            border: 1px solid #333;
+            /* Рамка */
+            display: inline-block;
+            padding: 5px 15px;
+            /* Поля */
+            text-decoration: na1;
+            /* Убираем подчёркивание */
+            margin-left: 47%;
+            margin-top: 10px;
+        }
+
+        .c:hover {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            /* Тень */
+            background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+            /* Градиент */
+            color: #a00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="grid-container-left">
+            <div class="a1"> 1</div>
+            <div class="a2"> 2</div>
+            <div class="a3"> 3</div>
+            <div class="a4"> 4</div>
+            <div class="a5"> 5</div>
+            <div class="a6"> 6</div>
+            <div class="a7"> 7</div>
+        </div>
+
+        <div class="grid-container-r">
+            <div class="a1-r">R 1</div>
+            <div class="a2-r"> R 2</div>
+            <div class="a3-r"> R 3</div>
+            <div class="a4-r"> R 4</div>
+            <div class="a5-r"> R 5</div>
+            <div class="a6-r"> R 6</div>
+            <div class="a7-r"> R 7</div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

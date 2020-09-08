@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            display: flex;
+            top: 0;
+            width: 100%;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font: bold 16px Verdana;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        div {
+            padding: 20px;
+            margin-top: 30px;
+            background-color: #1abc9c;
+            height: 1500px;
+        }
+
+        .menu {
+            display: flex;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .links {
+            width: 100px;
+            text-align: center;
+            list-style: none;
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .links:hover {
+            background-color: #fff;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+
+        .google {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <div>
+        <h1>Fixed Top Navigation Bar</h1>
+        <h2>Scroll this page to see the effect</h2>
+        <h2>The navigation bar will stay at the top of the page
+            while scrolling</h2>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+        <p> Some content..</p>
+    </div>
+    <ul class="menu">
+        <a href="index.html">
+            <li class="links">Home</li>
+        </a>
+        <a href="Lists.html">
+            <li class="links">Lists</li>
+        </a>
+        <a href="Table1.html">
+            <li class="links">Table2</li>
+        </a>
+        <a href="Table2.html">
+            <li class="links">Table2</li>
+        </a>
+        <a href="NavBar1.html">
+            <li class="links">NavBar1</li>
+        </a>
+        <a href="NavBar2.html">
+            <li class="links">NavBar2</li>
+        </a>
+        <a href="NavBar3.html">
+            <li class="links">NavBar3</li>
+        </a>
+        <a href="NavBar4.html">
+            <li class="links">NavBar4</li>
+        </a>
+        <a href="NavBar5.html">
+            <li class="links">NavBar5</li>
+        </a>
+    </ul>
+</body>
+
+</html>
